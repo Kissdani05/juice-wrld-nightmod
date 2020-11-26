@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicy WRLD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="dark-change"></label>
+    <style>
+    label{
+        position: absolute;
+        width: 45px;
+        height: 22px;
+        right: 20px;
+        top: 20px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    label:before{
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        left: 1px;
+        top: 1px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: black;
+        transition: 0.4s;
+    }
+    label:active:before{
+        left: 24px;
+        background: white;
+    }
+    body.night{
+        background: black;
+        color: white;
+    }
+    
+</style>
+    <div class="hero">
+        <h1>Juice WRLD</h1>
+    </div>
+    <div id="respon"></div>
+    <table>
+        <tr>
+            <td>
+                <a href="legend_never_die.html"><img src="képek/legends_never_die.png" alt=""></a>
+            </td>
+            <td>
+                <a href="world_on_drugs.html"><img src="képek/world_on_durgs.jpg" alt=""></a>
+            </td>
+            <td>
+                <a href="death_race_for_love.html"><img src="képek/death_race_for_love.png" alt=""></a>
+            </td>
+            <td>
+               <a href="too_soon.html"> <img src="képek/too soon.png" alt=""></a>
+            </td>
+            <td>
+               <a href="goodbye.html"> <img src="képek/goodbye.jpg" alt=""></a>
+            </td>
+            
+            
+        </tr>
+    </table>
+    <div id="koncertek">
+        <h1>Koncertek</h1>
+        <ul>
+           <br> <li>West Melbourne, VIC, Australia <b>2019.nov.29</b> </li> </br>
+           <br> <li>Canberra, ACT, Australia <b>2019.nov.23</b> </li> </br>
+           <br> <li>Dodger Stadium, Los Angeles <b>2019 nov.10</b> </li> </br>
+        </ul>
+    </div>
+    <div id="merch">
+        <h1>Shop</h1>
+
+        <div class="card">
+        <img src="képek/polo.jpg" alt="">
+        <h2>Ferfi/Noi polo</h2>
+        <h3>3500Ft</h3>
+        <div id="gomb"> <a href="https://www.legendsneverdie999.shop/products/legends-never-die-album-tee-in-white">Megrendelem</a></div>
+    </div>
+    <div class="card">
+        <img src="képek/pulics.png" alt="">
+        <h2>Ferfi/Noi pulcsik</h2>
+        <h3>5500Ft</h3>
+        <div id="gomb">
+        <a href="https://www.legendsneverdie999.shop/products/legends-never-die-album-hoodie">Megrendelem</a>
+    </div>
+    </div>
+    <div class="card">
+        <img src="képek/also3.png" alt="">
+        <h2>Ferfi/Noi pulcsik</h2>
+        <h3>5500Ft</h3>
+        <div id="gomb">
+        <a href="https://www.legendsneverdie999.shop/products/death-race-for-love-sweatpants-in-black">Megrendelem</a>
+    </div>
+    </div>
+    <div class="card">
+        <img src="képek/feher_pulcsi3.png" alt="">
+        <h2>Ferfi/Noi pulcsik</h2>
+        <h3>5500Ft</h3>
+        <div id="gomb">
+        <a href="https://www.legendsneverdie999.shop/products/legends-never-die-moonlight-hoodie">Megrendelem</a>
+    </div>
+    </div>
+    </div>
+
+<script>
+var content = document.getElementsByTagName('body')[0];
+    var darkMode = document.getElementById('dark-change');
+    darkMode.addEventListener('click', function(){
+        darkMode.classList.toogle('active');
+        content.classList.toogle('night');
+    })
+</script>
+</body>
+</html>
